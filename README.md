@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) starter template for **German craftsmen websites** (Handwerksbetriebe). Audience, copy guardrails, and SEO defaults are tuned for trades targeting customers in Germany.
+
+## First-run checklist (after cloning)
+
+Do these before generating any copy, SEO, or marketing pages:
+
+1. **Fill in `.agents/product-marketing-context.md`** — replace every `TODO` with the real Betrieb's details (Gewerk, Standort, Leistungen, Meisterstatus, Impressum-Daten). The marketing skills read this file before asking the user; stale `TODO`s will leak into output.
+2. **Update site metadata** in `app/layout.tsx` (title, description) and replace the placeholder home page in `app/page.tsx`.
+3. **Replace placeholder proof points** (the "12+ years / 200+ clients" stats and "Anna R."-style testimonials are filler — remove or replace with real ones).
+4. **Add legal pages** — `/impressum` (§5 TMG) and `/datenschutz` (DSGVO) are non-negotiable for German sites.
+5. **Set up Google Business Profile** and link it from the footer; for craftsmen sites it's the single most important SEO asset.
 
 ## Getting Started
 
