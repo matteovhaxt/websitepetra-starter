@@ -9,6 +9,7 @@ Do these before generating any copy, SEO, or marketing pages:
 3. **Replace placeholder proof points** (the "12+ years / 200+ clients" stats and "Anna R."-style testimonials are filler — remove or replace with real ones).
 4. **Add legal pages** — `/impressum` (§5 TMG) and `/datenschutz` (DSGVO) are non-negotiable for German sites.
 5. **Set up Google Business Profile** and link it from the footer; for craftsmen sites it's the single most important SEO asset.
+6. **Seed the blog** — delete the placeholder `content/blog/willkommen.mdx` and add the first real articles (Ratgeber, Kostenfragen, Projekt-Einblicke). See the *Creating a blog article* section in `AGENTS.md` for slug rules and the `metadata` shape, or ask the agent to draft posts using the `copywriting` / `programmatic-seo` skills.
 
 ## Getting Started
 
