@@ -37,7 +37,7 @@ Inverts background/foreground, lifts surface tones, and uses transparent-white f
 
 ### Per-Betrieb extension (TODO at clone-time)
 
-Pick a single brand accent in OKLCH at clone-time. Wire it into `--primary` (or a new `--brand` token if `--primary` should remain near-black for body type). Reduce chroma toward the lightness extremes. The "≤10% accent" rule of Restrained applies — the accent is for CTAs, focus rings, and headline emphasis, not for filling cards.
+Pick a single brand accent in OKLCH at clone-time and override `--primary` (light + dark) with it. `--primary-foreground` is the contrast color used on top of `--primary` surfaces. `--destructive` stays reserved for emergency / Notdienst sections — do not retint it with brand colors. Body type runs on `--foreground`, which stays monochromatic; the brand accent only lands in `--primary`. Reduce chroma toward the lightness extremes. The "≤10% accent" rule of Restrained applies — the accent is for CTAs, focus rings, and headline emphasis, not for filling cards.
 
 ## Typography
 

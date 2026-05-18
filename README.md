@@ -25,8 +25,8 @@ app/
   page.tsx                home — hero, trust strip, services, process,
                           Referenzen preview, testimonials, Notdienst,
                           pricing, FAQ, CTA
-  globals.css             design tokens (neutral by default; --brand and
-                          --signal slots intended to be overridden per Betrieb)
+  globals.css             design tokens (neutral by default; --primary and
+                          --destructive slots intended to be overridden per Betrieb)
   leistungen/page.tsx     services overview with anchored sections
                           (#sanierung, #reparatur, #beratung, #notdienst)
   referenzen/page.tsx     project portfolio (feature row + pair + triple bands)
@@ -97,7 +97,7 @@ Search-and-replace before launch. Treat the table as a checklist; do not leave a
 | Testimonials (`Familie Müller`, `Hausverwaltung Bergmann`) | `app/page.tsx`                                       |
 | Prices (`78 €/h`, `120 €`, `18.400 €`, …)  | `app/page.tsx`, `app/leistungen/page.tsx`, `app/notdienst/page.tsx`  |
 | `hasNotdienst = true`                      | `components/site-header.tsx` — toggle to `false` if no Notdienst     |
-| Brand color (currently neutral)            | `--brand` / `--signal` in `app/globals.css`                          |
+| Brand color (currently neutral)            | `--primary` / `--destructive` in `app/globals.css`                   |
 | Project image placeholders                 | `components/image-placeholder.tsx` is rendered everywhere — replace with real photos in `public/` |
 | Blog placeholder                           | `content/blog/willkommen.mdx`                                        |
 
@@ -117,18 +117,16 @@ grep -r "TODO" .agents/product-marketing-context.md
 
 ## Design tokens
 
-The starter ships **fully neutral** (achromatic shadcn defaults). To brand a cloned instance, override these four lines in `app/globals.css`:
+The starter ships **fully neutral** (achromatic shadcn defaults). To brand a cloned instance, override these tokens in `app/globals.css`:
 
 ```css
-:root {
-  --brand: oklch(0.55 0.14 50);          /* CTA color; pick OKLCH at clone-time */
-  --brand-foreground: oklch(0.985 0 0);
-  --brand-soft: oklch(0.95 0.04 70);     /* subtle brand-tinted surface */
-  --signal: oklch(0.55 0.22 27);         /* Notdienst / emergency red */
-}
+--primary: oklch(0.55 0.14 50);          /* Brand color, used for CTAs, focus rings, headline accents */
+--primary-foreground: oklch(0.985 0 0);
+--destructive: oklch(0.577 0.245 27.325); /* Emergency / Notdienst accent */
+--destructive-foreground: oklch(0.985 0 0);
 ```
 
-Every `bg-brand`, `text-brand`, `bg-signal` etc. in the codebase resolves through these tokens — no other file needs to change. Dark-mode equivalents live under `.dark` in the same file.
+Every `bg-primary`, `text-primary`, `bg-destructive`, `text-destructive` in the codebase resolves through these tokens — no other file needs to change. The `--primary` override is the only one needed at clone-time. Dark-mode equivalents live under `.dark` in the same file.
 
 For the typography, spacing, and anti-pattern rules this template follows, read `DESIGN.md`. For the audience, anti-references, and brand-personality rules, read `PRODUCT.md`.
 
@@ -143,7 +141,7 @@ For the typography, spacing, and anti-pattern rules this template follows, read 
    ```
 2. **Fill `.agents/product-marketing-context.md`** — replace every `TODO` (Gewerk, Standort, Leistungen, Meisterstatus, Differenzierung, proof points, Impressum-Daten).
 3. **Decide which routes to keep** (table above). Delete the rest — directory plus footer/header links plus any homepage section that points to them.
-4. **Pick a brand color** and update the four `--brand*` / `--signal` tokens in `globals.css`. Verify contrast with WCAG 2.2 AA on CTAs and small text.
+4. **Pick a brand color** and update the `--primary` (and, if Notdienst is offered, `--destructive`) tokens in `globals.css`. Verify contrast with WCAG 2.2 AA on CTAs and small text.
 5. **Replace every entry in the placeholder inventory** above. Run the grep checks at the bottom of that table — they must all return zero.
 6. **Replace `<ImagePlaceholder />` usages with real photos.** Drop them in `public/` and use `next/image`. Stock photos are explicitly forbidden for this audience (see `PRODUCT.md` anti-references).
 7. **Audit Impressum and Datenschutz** against the Betrieb's real data and the latest § 5 TMG / DSGVO guidance. Have a Fachanwältin / Fachanwalt review AGB before publishing.
