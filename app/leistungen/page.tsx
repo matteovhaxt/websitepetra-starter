@@ -178,7 +178,7 @@ export default function LeistungenPage() {
                   <span>{l.eyebrow}</span>
                 </div>
                 <h2 className="flex items-start gap-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-                  <Icon className="mt-1 size-7 text-brand" aria-hidden />
+                  <Icon className="mt-1 size-7 text-primary" aria-hidden />
                   {l.title}
                 </h2>
                 <p className="mt-5 max-w-prose text-foreground/75">{l.intro}</p>
@@ -190,7 +190,7 @@ export default function LeistungenPage() {
                       className="flex items-start gap-3 text-foreground/85"
                     >
                       <CheckCircle2
-                        className="mt-1 size-4 shrink-0 text-brand"
+                        className="mt-1 size-4 shrink-0 text-primary"
                         aria-hidden
                       />
                       <span>{b}</span>
@@ -201,7 +201,7 @@ export default function LeistungenPage() {
                 <div className="mt-8 flex flex-wrap items-center gap-3">
                   <Link
                     href="/contact"
-                    className="inline-flex h-10 items-center gap-2 rounded-md bg-brand px-4 text-sm font-medium text-brand-foreground hover:bg-brand/90"
+                    className="inline-flex h-10 items-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
                   >
                     Anfrage senden
                     <ArrowRight className="size-4" aria-hidden />
@@ -267,7 +267,7 @@ export default function LeistungenPage() {
             <div className="flex flex-wrap items-center gap-3 md:col-span-4 md:justify-end">
               <a
                 href="tel:+493012345678"
-                className="inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-sm font-medium text-brand-foreground hover:bg-brand/90"
+                className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground hover:bg-primary/90"
               >
                 <Phone className="size-4" aria-hidden />
                 Anrufen

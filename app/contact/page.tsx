@@ -74,12 +74,12 @@ export default function ContactPage() {
                       rel={c.href.startsWith("http") ? "noreferrer noopener" : undefined}
                       className={`flex h-full flex-col gap-2 rounded-lg border p-4 transition-colors ${
                         c.primary
-                          ? "border-brand/40 bg-brand/8 hover:bg-brand/12"
+                          ? "border-primary/40 bg-primary/8 hover:bg-primary/12"
                           : "border-border bg-background hover:bg-muted"
                       }`}
                     >
                       <Icon
-                        className={`size-4 ${c.primary ? "text-brand" : "text-foreground/60"}`}
+                        className={`size-4 ${c.primary ? "text-primary" : "text-foreground/60"}`}
                         aria-hidden
                       />
                       <div className="text-base font-medium tabular-nums">
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   htmlFor="name"
                   className="mb-1.5 block text-sm font-medium"
                 >
-                  Name <span className="text-brand">*</span>
+                  Name <span className="text-primary">*</span>
                 </label>
                 <Input id="name" name="name" required autoComplete="name" />
               </div>
@@ -182,7 +182,7 @@ export default function ContactPage() {
                   htmlFor="phone"
                   className="mb-1.5 block text-sm font-medium"
                 >
-                  Telefon <span className="text-brand">*</span>
+                  Telefon <span className="text-primary">*</span>
                 </label>
                 <Input
                   id="phone"
@@ -213,7 +213,7 @@ export default function ContactPage() {
                   className="mb-1.5 block text-sm font-medium"
                 >
                   Postleitzahl der Baustelle{" "}
-                  <span className="text-brand">*</span>
+                  <span className="text-primary">*</span>
                 </label>
                 <Input
                   id="postcode"
@@ -233,7 +233,7 @@ export default function ContactPage() {
                   htmlFor="message"
                   className="mb-1.5 block text-sm font-medium"
                 >
-                  Worum geht es? <span className="text-brand">*</span>
+                  Worum geht es? <span className="text-primary">*</span>
                 </label>
                 <Textarea
                   id="message"
@@ -290,7 +290,7 @@ export default function ContactPage() {
               <div className="sm:col-span-2 flex flex-wrap items-center justify-between gap-3 pt-2">
                 <button
                   type="submit"
-                  className="inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-sm font-medium text-brand-foreground shadow-sm hover:bg-brand/90"
+                  className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground shadow-sm hover:bg-primary/90"
                 >
                   <Send className="size-4" aria-hidden />
                   Anfrage senden

@@ -160,7 +160,7 @@ export default function ReferenzenPage() {
               </p>
               <div className="mt-5 flex items-center gap-3 text-xs">
                 <span className="inline-flex h-7 items-center gap-1.5 rounded-full border border-border bg-background px-3">
-                  <Sparkles className="size-3.5 text-brand" aria-hidden />
+                  <Sparkles className="size-3.5 text-primary" aria-hidden />
                   <span className="font-medium">6 Projekte</span>
                 </span>
                 <span className="text-muted-foreground">aus 2024 – 2025</span>
@@ -182,7 +182,7 @@ export default function ReferenzenPage() {
               />
             </div>
             <div className="md:col-span-5 md:pt-2">
-              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[0.7rem] font-medium uppercase tracking-wider text-brand">
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[0.7rem] font-medium uppercase tracking-wider text-primary">
                 <Sparkles className="size-3.5" aria-hidden />
                 Projekt des Monats
               </div>
@@ -296,7 +296,7 @@ export default function ReferenzenPage() {
             <div className="flex flex-wrap items-center gap-3 md:col-span-4 md:justify-end">
               <a
                 href="tel:+493012345678"
-                className="inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-sm font-medium text-brand-foreground hover:bg-brand/90"
+                className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground hover:bg-primary/90"
               >
                 <Phone className="size-4" aria-hidden />
                 Anrufen

@@ -78,7 +78,7 @@ export function SiteHeader() {
           {hasNotdienst ? (
             <Link
               href="/notdienst"
-              className="hidden items-center gap-1.5 rounded-full border border-signal/30 bg-signal/8 px-3 py-1 text-xs font-medium text-signal sm:inline-flex"
+              className="hidden items-center gap-1.5 rounded-full border border-destructive/30 bg-destructive/8 px-3 py-1 text-xs font-medium text-destructive sm:inline-flex"
               aria-label="Notdienst: rund um die Uhr erreichbar"
             >
               <Siren className="size-3.5" aria-hidden />
@@ -90,7 +90,7 @@ export function SiteHeader() {
             href={phoneHref}
             aria-label={`Anrufen ${phoneDisplay}`}
             className={cn(
-              "inline-flex h-9 items-center gap-2 rounded-md bg-brand px-3 text-sm font-medium text-brand-foreground transition-colors hover:bg-brand/90",
+              "inline-flex h-9 items-center gap-2 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",
               "shadow-sm",
             )}
           >
@@ -137,7 +137,7 @@ export function SiteHeader() {
                 <div className="mt-8 space-y-3 border-t border-border pt-6">
                   <a
                     href={phoneHref}
-                    className="flex items-center justify-between rounded-md bg-brand px-4 py-3 text-base font-medium text-brand-foreground"
+                    className="flex items-center justify-between rounded-md bg-primary px-4 py-3 text-base font-medium text-primary-foreground"
                   >
                     <span className="inline-flex items-center gap-2">
                       <Phone className="size-4" aria-hidden />
@@ -150,7 +150,7 @@ export function SiteHeader() {
                       render={
                         <Link
                           href="/notdienst"
-                          className="flex items-center justify-between rounded-md border border-signal/30 bg-signal/8 px-4 py-3 text-sm font-medium text-signal"
+                          className="flex items-center justify-between rounded-md border border-destructive/30 bg-destructive/8 px-4 py-3 text-sm font-medium text-destructive"
                         >
                           <span className="inline-flex items-center gap-2">
                             <Siren className="size-4" aria-hidden />

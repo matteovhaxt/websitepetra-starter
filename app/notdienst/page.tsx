@@ -86,9 +86,9 @@ export default function NotdienstPage() {
   return (
     <>
       {/* Hero — phone first, big and unmissable. */}
-      <section className="border-b border-border bg-signal/5">
+      <section className="border-b border-border bg-destructive/5">
         <div className="mx-auto w-full max-w-6xl px-4 pt-14 pb-12 sm:px-6 sm:pt-20 sm:pb-16">
-          <div className="inline-flex items-center gap-2 rounded-full border border-signal/30 bg-background px-3 py-1 text-xs font-medium text-signal">
+          <div className="inline-flex items-center gap-2 rounded-full border border-destructive/30 bg-background px-3 py-1 text-xs font-medium text-destructive">
             <Siren className="size-3.5" aria-hidden />
             Notdienst
           </div>
@@ -105,7 +105,7 @@ export default function NotdienstPage() {
             <div className="md:col-span-5">
               <a
                 href="tel:+493012345678"
-                className="block rounded-lg border border-signal/40 bg-signal p-6 text-signal-foreground shadow-sm transition-transform hover:scale-[1.01]"
+                className="block rounded-lg border border-destructive/40 bg-destructive p-6 text-destructive-foreground shadow-sm transition-transform hover:scale-[1.01]"
               >
                 <div className="flex items-center justify-between text-xs uppercase tracking-wider opacity-80">
                   <span>Direkt anrufen</span>
@@ -145,7 +145,7 @@ export default function NotdienstPage() {
             const Icon = c.icon;
             return (
               <div key={c.title} className="bg-card p-6">
-                <Icon className="size-5 text-signal" aria-hidden />
+                <Icon className="size-5 text-destructive" aria-hidden />
                 <h3 className="mt-4 text-lg font-semibold tracking-tight">
                   {c.title}
                 </h3>
@@ -163,7 +163,7 @@ export default function NotdienstPage() {
         <div className="mx-auto grid w-full max-w-6xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-12">
           <div className="md:col-span-5">
             <div className="eyebrow mb-3 flex items-center gap-2">
-              <AlertTriangle className="size-4 text-signal" aria-hidden />
+              <AlertTriangle className="size-4 text-destructive" aria-hidden />
               Bis wir da sind
             </div>
             <h2 className="text-balance text-3xl font-semibold tracking-tight">
@@ -208,15 +208,15 @@ export default function NotdienstPage() {
             </p>
             <ul className="mt-6 space-y-2 text-sm text-foreground/80">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" aria-hidden />
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
                 Festpreis schriftlich vor jeder größeren Reparatur
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" aria-hidden />
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
                 Schadens­bericht für die Versicherung inklusive
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" aria-hidden />
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
                 Materialbelege liegen dem Schlussangebot bei
               </li>
             </ul>
@@ -260,7 +260,7 @@ export default function NotdienstPage() {
           <div className="mt-12 flex flex-col items-center gap-3">
             <a
               href="tel:+493012345678"
-              className="inline-flex h-12 items-center gap-2 rounded-md bg-signal px-6 text-base font-medium text-signal-foreground shadow-sm hover:bg-signal/90"
+              className="inline-flex h-12 items-center gap-2 rounded-md bg-destructive px-6 text-base font-medium text-destructive-foreground shadow-sm hover:bg-destructive/90"
             >
               <Phone className="size-4" aria-hidden />
               <span className="tabular-nums">030 1234567 anrufen</span>

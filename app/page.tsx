@@ -149,13 +149,13 @@ export default function Home() {
         <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-20 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
             <div className="eyebrow mb-5 flex items-center gap-2">
-              <span className="size-1.5 rounded-full bg-brand" aria-hidden />
+              <span className="size-1.5 rounded-full bg-primary" aria-hidden />
               Handwerk aus Berlin · seit 2013
             </div>
             <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
               Sauberes Handwerk,
               <br />
-              <span className="text-brand">ehrlich gerechnet.</span>
+              <span className="text-primary">ehrlich gerechnet.</span>
             </h1>
             <p className="mt-6 max-w-xl text-pretty text-lg leading-7 text-foreground/75">
               Petra ist ein Familienbetrieb für Sanierung, Reparatur und kleine
@@ -167,7 +167,7 @@ export default function Home() {
               <a
                 href="tel:+493012345678"
                 className={cn(
-                  "inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-base font-medium text-brand-foreground shadow-sm transition-colors hover:bg-brand/90",
+                  "inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-base font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90",
                 )}
               >
                 <Phone className="size-4" aria-hidden />
@@ -186,15 +186,15 @@ export default function Home() {
 
             <ul className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-foreground/70">
               <li className="inline-flex items-center gap-1.5">
-                <CheckCircle2 className="size-4 text-brand" aria-hidden />
+                <CheckCircle2 className="size-4 text-primary" aria-hidden />
                 Festpreis vor Arbeitsbeginn
               </li>
               <li className="inline-flex items-center gap-1.5">
-                <CheckCircle2 className="size-4 text-brand" aria-hidden />
+                <CheckCircle2 className="size-4 text-primary" aria-hidden />
                 Rückruf innerhalb von 24 h
               </li>
               <li className="inline-flex items-center gap-1.5">
-                <CheckCircle2 className="size-4 text-brand" aria-hidden />
+                <CheckCircle2 className="size-4 text-primary" aria-hidden />
                 Meisterbetrieb · Innung Berlin
               </li>
             </ul>
@@ -210,7 +210,7 @@ export default function Home() {
               />
               <div className="absolute -bottom-4 -left-4 hidden rounded-md border border-border bg-background px-3 py-2 shadow-sm sm:block">
                 <div className="flex items-center gap-2 text-xs">
-                  <Star className="size-3.5 fill-brand text-brand" aria-hidden />
+                  <Star className="size-3.5 fill-primary text-primary" aria-hidden />
                   <span className="font-medium tabular-nums">4,9</span>
                   <span className="text-muted-foreground">
                     · 184 Bewertungen auf Google
@@ -279,7 +279,7 @@ export default function Home() {
                   <Icon
                     className={cn(
                       "size-6",
-                      featured ? "text-brand" : "text-foreground/70",
+                      featured ? "text-primary" : "text-foreground/70",
                     )}
                     aria-hidden
                   />
@@ -313,7 +313,7 @@ export default function Home() {
                 </div>
                 {featured ? (
                   <div className="mt-8 inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 text-xs font-medium">
-                    <Sparkles className="size-3.5 text-brand" aria-hidden />
+                    <Sparkles className="size-3.5 text-primary" aria-hidden />
                     Schwerpunkt im Betrieb
                   </div>
                 ) : null}
@@ -406,7 +406,7 @@ export default function Home() {
             />
           </div>
           <div className="md:col-span-5">
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[0.7rem] font-medium uppercase tracking-wider text-brand">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[0.7rem] font-medium uppercase tracking-wider text-primary">
               <Sparkles className="size-3.5" aria-hidden />
               Projekt des Monats
             </div>
@@ -479,7 +479,7 @@ export default function Home() {
                 className="rounded-lg border border-border bg-background p-7"
               >
                 <Quote
-                  className="size-5 text-brand"
+                  className="size-5 text-primary"
                   aria-hidden
                 />
                 <blockquote className="mt-4 text-lg leading-8 text-foreground/90">
@@ -499,9 +499,9 @@ export default function Home() {
 
       {/* Notdienst strip — phone-first, quietly different from the rest. */}
       <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6">
-        <div className="grid items-center gap-6 rounded-lg border border-signal/30 bg-signal/8 p-6 md:grid-cols-12 md:p-8">
+        <div className="grid items-center gap-6 rounded-lg border border-destructive/30 bg-destructive/8 p-6 md:grid-cols-12 md:p-8">
           <div className="md:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-signal/30 bg-background px-2.5 py-1 text-xs font-medium text-signal">
+            <div className="inline-flex items-center gap-2 rounded-full border border-destructive/30 bg-background px-2.5 py-1 text-xs font-medium text-destructive">
               <Siren className="size-3.5" aria-hidden />
               Notdienst
             </div>
@@ -516,7 +516,7 @@ export default function Home() {
           <div className="md:col-span-5 md:text-right">
             <a
               href="tel:+493012345678"
-              className="inline-flex h-12 items-center gap-2 rounded-md bg-signal px-5 text-base font-medium text-signal-foreground shadow-sm hover:bg-signal/90"
+              className="inline-flex h-12 items-center gap-2 rounded-md bg-destructive px-5 text-base font-medium text-destructive-foreground shadow-sm hover:bg-destructive/90"
             >
               <Phone className="size-4" aria-hidden />
               <span className="tabular-nums">030 1234567</span>
@@ -647,7 +647,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-3 md:col-span-5 md:justify-end">
             <a
               href="tel:+493012345678"
-              className="inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-base font-medium text-brand-foreground shadow-sm hover:bg-brand/90"
+              className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-base font-medium text-primary-foreground shadow-sm hover:bg-primary/90"
             >
               <Phone className="size-4" aria-hidden />
               030 1234567

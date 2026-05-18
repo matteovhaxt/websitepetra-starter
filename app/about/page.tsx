@@ -95,7 +95,7 @@ export default function AboutPage() {
             <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl">
               Familienbetrieb in
               <br />
-              <span className="text-brand">dritter Generation.</span>
+              <span className="text-primary">dritter Generation.</span>
             </h1>
             <p className="mt-6 max-w-xl text-pretty text-lg leading-7 text-foreground/75">
               Petra ist ein kleiner Berliner Handwerksbetrieb. Vier feste
@@ -106,7 +106,7 @@ export default function AboutPage() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="tel:+493012345678"
-                className="inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-base font-medium text-brand-foreground hover:bg-brand/90"
+                className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-base font-medium text-primary-foreground hover:bg-primary/90"
               >
                 <Phone className="size-4" aria-hidden />
                 Mit uns sprechen
@@ -127,7 +127,7 @@ export default function AboutPage() {
               rounded="xl"
             />
             <figure className="mt-5 rounded-md border border-border bg-muted/30 p-5">
-              <Quote className="size-4 text-brand" aria-hidden />
+              <Quote className="size-4 text-primary" aria-hidden />
               <blockquote className="mt-3 text-base leading-7">
                 Mein Großvater hat gesagt: „Wer ehrlich misst, kann ehrlich
                 abrechnen.“ Daran versuchen wir uns zu halten.
@@ -157,7 +157,7 @@ export default function AboutPage() {
                   <span className="font-mono text-xs text-muted-foreground">
                     0{i + 1}
                   </span>
-                  <Icon className="size-5 text-brand" aria-hidden />
+                  <Icon className="size-5 text-primary" aria-hidden />
                 </div>
                 <h3 className="mt-5 text-lg font-semibold tracking-tight">
                   {v.title}
@@ -287,7 +287,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap items-center gap-3 md:col-span-4 md:justify-end">
             <a
               href="tel:+493012345678"
-              className="inline-flex h-11 items-center gap-2 rounded-md bg-brand px-5 text-sm font-medium text-brand-foreground hover:bg-brand/90"
+              className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground hover:bg-primary/90"
             >
               <Phone className="size-4" aria-hidden />
               Anrufen
