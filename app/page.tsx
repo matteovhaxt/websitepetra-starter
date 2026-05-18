@@ -139,7 +139,7 @@ const faqs = [
   },
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       {/* Hero — asymmetric. Headline left, portrait right.
